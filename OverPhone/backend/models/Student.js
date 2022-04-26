@@ -2,14 +2,17 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 let studentSchema = new Schema({
-    name: {
+    Item_category: {
         type: String
     },
-    email: {
+    name_product: {
         type: String
     },
-    phone: {
+    price: {
         type: Number
+    },
+    colour_product:{
+        type:String
     }
 }, {
     collection: 'students'
